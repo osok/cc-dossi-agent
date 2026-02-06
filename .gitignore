@@ -1,0 +1,39 @@
+# Project-generated documents (per-project, not part of template)
+requirement-docs/*.md
+!requirement-docs/_sample-requirements.md
+!requirement-docs/README.md
+design-docs/*.md
+developer-docs/*.md
+project-docs/*.md
+project-docs/*.log
+project-docs/adrs/*.md
+!project-docs/adrs/_template-adr.md
+project-docs/schemas/*.md
+!project-docs/schemas/_template-schema.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Keep example env files
+!.env-example
+!.env.example
+
+# Local scripts
+run-chrome.sh
