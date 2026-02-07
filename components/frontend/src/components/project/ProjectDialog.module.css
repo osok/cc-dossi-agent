@@ -1,0 +1,215 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog {
+  width: 520px;
+  max-width: 90vw;
+  max-height: 80vh;
+  background: var(--color-paper-light);
+  border: 2px solid var(--color-paper-edge);
+  border-radius: var(--radius-md);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-paper-edge);
+}
+
+.title {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-xl);
+  color: var(--color-ink-black);
+  margin: 0;
+}
+
+.closeButton {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-lg);
+  background: none;
+  border: none;
+  color: var(--color-ink-faded);
+  cursor: pointer;
+  padding: var(--space-1);
+}
+
+.closeButton:hover {
+  color: var(--color-classified);
+}
+
+.error {
+  padding: var(--space-2) var(--space-4);
+  background: rgba(139, 0, 0, 0.08);
+  color: var(--color-classified);
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  border-bottom: 1px solid var(--color-paper-edge);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+}
+
+.tabBar {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.tab {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-paper-base);
+  border: 1px solid var(--color-paper-edge);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-ink-faded);
+}
+
+.tab:hover {
+  background: var(--color-paper-dark);
+}
+
+.activeTab {
+  background: var(--color-paper-dark);
+  color: var(--color-ink-black);
+  font-weight: bold;
+}
+
+.createForm {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  padding: var(--space-2);
+  border: 1px solid var(--color-paper-edge);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper-base);
+  color: var(--color-ink-black);
+}
+
+.input:focus {
+  outline: 2px solid var(--color-ai-enhanced);
+  outline-offset: 1px;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.emptyMessage {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  color: var(--color-ink-faded);
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.projectItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+  background: var(--color-paper-base);
+  border: 1px solid var(--color-paper-edge);
+  border-radius: var(--radius-sm);
+}
+
+.projectInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.projectName {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-base);
+  color: var(--color-ink-black);
+}
+
+.projectMeta {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-ink-faded);
+}
+
+.projectActions {
+  display: flex;
+  gap: var(--space-1);
+  flex-shrink: 0;
+  margin-left: var(--space-3);
+}
+
+.uploadSection {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px dashed var(--color-paper-edge);
+}
+
+.sectionTitle {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  color: var(--color-ink-black);
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.sectionNote {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-ink-faded);
+  font-style: italic;
+  margin-bottom: var(--space-3);
+}
+
+/* Duplicate detection prompt (FR-PARSE-010) */
+.duplicatePrompt {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: rgba(139, 0, 0, 0.05);
+  border: 1px solid var(--color-classified);
+  border-radius: var(--radius-sm);
+}
+
+.duplicateList {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  color: var(--color-ink-black);
+  margin: var(--space-2) 0 var(--space-4) var(--space-4);
+  padding: 0;
+  list-style: disc;
+}
+
+.duplicateList li {
+  margin-bottom: var(--space-1);
+}
+
+.duplicateActions {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}

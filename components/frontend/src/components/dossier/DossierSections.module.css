@@ -1,0 +1,242 @@
+.sections {
+  margin-top: var(--space-6);
+}
+
+.briefing {
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: var(--radius-sm);
+}
+
+.briefingText {
+  font-family: var(--font-body);
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--color-ink-faded);
+}
+
+.section {
+  margin-bottom: var(--space-2);
+  border-top: 1px dashed var(--color-paper-edge);
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: var(--font-typewriter);
+  font-size: var(--text-base);
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--color-ink-black);
+  background: transparent;
+  border: none;
+  padding: var(--space-3) 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sectionHeading:hover {
+  color: var(--color-classified);
+}
+
+.toggle {
+  font-size: var(--text-lg);
+  font-weight: bold;
+  color: var(--color-ink-faded);
+  flex-shrink: 0;
+  margin-left: var(--space-4);
+}
+
+.sectionContent {
+  padding: 0 0 var(--space-4) 0;
+}
+
+/* Markdown rendered content */
+.markdownContent {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: var(--color-ink-black);
+  font-size: var(--text-sm);
+}
+
+.markdownContent p {
+  margin-bottom: var(--space-3);
+}
+
+.markdownContent ul,
+.markdownContent ol {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-6);
+}
+
+.markdownContent li {
+  margin-bottom: var(--space-1);
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3,
+.markdownContent h4 {
+  font-family: var(--font-typewriter);
+  margin: var(--space-4) 0 var(--space-2) 0;
+  color: var(--color-ink-black);
+}
+
+.markdownContent h3 {
+  font-size: var(--text-base);
+}
+
+.markdownContent h4 {
+  font-size: var(--text-sm);
+}
+
+.markdownContent code {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  background: rgba(0, 0, 0, 0.06);
+  padding: 1px var(--space-1);
+  border-radius: 2px;
+}
+
+.markdownContent pre {
+  background: rgba(0, 0, 0, 0.06);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+}
+
+.markdownContent pre code {
+  background: none;
+  padding: 0;
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+
+/* Override highlight.js background to match dossier theme */
+.markdownContent pre code.hljs {
+  background: transparent;
+  padding: 0;
+}
+
+/* Rendered markdown blocks (from ```markdown code fences) */
+.renderedMarkdown {
+  background: rgba(0, 0, 0, 0.03);
+  border-left: 3px solid var(--color-paper-edge);
+  padding: var(--space-2) var(--space-3);
+  margin: var(--space-3) 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.renderedMarkdown h1,
+.renderedMarkdown h2,
+.renderedMarkdown h3,
+.renderedMarkdown h4 {
+  font-family: var(--font-typewriter);
+  margin: var(--space-3) 0 var(--space-2) 0;
+  color: var(--color-ink-black);
+}
+
+.renderedMarkdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-2) 0;
+  font-size: var(--text-xs);
+}
+
+.renderedMarkdown th,
+.renderedMarkdown td {
+  border: 1px solid var(--color-paper-edge);
+  padding: var(--space-1) var(--space-2);
+  text-align: left;
+}
+
+.renderedMarkdown th {
+  background: var(--color-paper-dark);
+  font-family: var(--font-typewriter);
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+}
+
+.renderedMarkdown p {
+  margin-bottom: var(--space-2);
+}
+
+.renderedMarkdown ul,
+.renderedMarkdown ol {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-6);
+}
+
+.renderedMarkdown li {
+  margin-bottom: var(--space-1);
+}
+
+.markdownContent strong {
+  font-weight: bold;
+  color: var(--color-ink-black);
+}
+
+.markdownContent blockquote {
+  border-left: 3px solid var(--color-paper-edge);
+  padding-left: var(--space-4);
+  margin: var(--space-3) 0;
+  color: var(--color-ink-faded);
+  font-style: italic;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--color-paper-edge);
+  padding: var(--space-1) var(--space-2);
+  text-align: left;
+}
+
+.table th {
+  background: var(--color-paper-dark);
+  font-family: var(--font-typewriter);
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+}
+
+.table tr:nth-child(even) {
+  background: var(--color-paper-light);
+}
+
+/* AI Enhanced badge (FR-ENRICH-006) */
+.briefingHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.aiEnhancedBadge {
+  display: inline-block;
+  font-family: var(--font-typewriter);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ai-enhanced, #4a90d9);
+  border: 1px solid var(--color-ai-enhanced, #4a90d9);
+  background: rgba(74, 144, 217, 0.08);
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  cursor: default;
+}
+
+.enrichedNotice {
+  margin-bottom: var(--space-4);
+  text-align: right;
+}

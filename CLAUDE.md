@@ -4,8 +4,8 @@
 
 ## Current Work
 
-**Seq:** (pending) | **Name:** (pending) | **Status:** Not Started
-**Task List:** (none)
+**Seq:** 001 | **Name:** agent-dossier | **Status:** In Progress
+**Task List:** project-docs/001-task-list-agent-dossier.md
 
 ---
 
@@ -216,6 +216,7 @@ Requirements include the sequence number to link them to specific work items.
 
 | Seq | Short Name | Component | Requirements | Design | Task List | Status |
 |-----|------------|-----------|--------------|--------|-----------|--------|
+| 001 | agent-dossier | all | agent-dossier.md | 001-design-agent-dossier.md | 001-task-list-agent-dossier.md | In Progress |
 
 ---
 

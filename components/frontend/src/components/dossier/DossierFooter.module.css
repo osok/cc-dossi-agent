@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-6) 0 var(--space-4);
+  border-top: 2px solid var(--color-paper-edge);
+  margin-top: var(--space-6);
+}

@@ -1,0 +1,101 @@
+.dossierPage {
+  max-width: var(--dossier-max-width);
+  margin: 0 auto;
+  position: relative;
+  padding-top: var(--space-6);
+}
+
+/* Classified Stamp */
+.classifiedStamp {
+  font-family: var(--font-typewriter);
+  color: var(--color-classified);
+  opacity: 0.65;
+  font-size: 24px;
+  transform: rotate(-5deg);
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  pointer-events: none;
+}
+
+/* Folder Tab */
+.folderTab {
+  display: inline-block;
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  color: var(--color-ink-faded);
+  background: var(--color-paper-dark);
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  border: 1px solid var(--color-paper-edge);
+  border-bottom: none;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Phase Stamp */
+.phaseStamp {
+  display: inline-block;
+  font-family: var(--font-typewriter);
+  font-size: var(--text-xs);
+  font-weight: bold;
+  color: white;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-stamp);
+}
+
+/* Dossier Card */
+.dossierCard {
+  background: var(--color-paper-light);
+  border: 1px solid var(--color-paper-edge);
+  border-radius: 0 var(--radius-md) var(--radius-md) var(--radius-md);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-paper);
+  position: relative;
+}
+
+/* Two-column header */
+.headerArea {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.headerLeft {
+  min-width: 0;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.portraitArea {
+  width: 200px;
+}
+
+.statArea {
+  width: 200px;
+}
+
+/* Responsive: collapse to single column */
+@media (max-width: 1023px) {
+  .headerArea {
+    grid-template-columns: 1fr;
+  }
+
+  .headerRight {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

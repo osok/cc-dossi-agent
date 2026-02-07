@@ -1,0 +1,53 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-1);
+}
+
+.styleOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-ink-faded);
+  background: var(--color-paper-base);
+  border: 1px solid var(--color-paper-edge);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.styleOption:hover {
+  background: var(--color-paper-dark);
+  color: var(--color-ink-black);
+}
+
+.styleOption.selected {
+  background: var(--color-paper-dark);
+  border-color: var(--color-ink-faded);
+  color: var(--color-ink-black);
+  font-weight: bold;
+}
+
+.styleOption.hasPortrait {
+  border-left: 3px solid var(--color-success);
+}
+
+.styleName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-success);
+  flex-shrink: 0;
+  margin-left: var(--space-1);
+}

@@ -1,0 +1,27 @@
+.pipelineContainer {
+  padding: var(--space-4);
+}
+
+.title {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-xl);
+  color: var(--color-ink-black);
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  padding-bottom: var(--space-4);
+  align-items: stretch;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-1);
+  flex-shrink: 0;
+}

@@ -1,0 +1,54 @@
+.header {
+  position: relative;
+  padding-bottom: var(--space-4);
+}
+
+.docId {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: var(--font-typewriter);
+  font-size: var(--text-sm);
+  color: var(--color-ink-faded);
+}
+
+.agentName {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-3xl);
+  color: var(--color-ink-black);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.codename {
+  font-family: var(--font-typewriter);
+  font-size: var(--text-lg);
+  color: var(--color-classified);
+  margin-bottom: var(--space-2);
+}
+
+.description {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--color-ink-faded);
+  margin-bottom: var(--space-3);
+  line-height: 1.5;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.traits {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--color-ink-faded);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-2);
+}
+
+.phaseArea {
+  margin-top: var(--space-2);
+}
